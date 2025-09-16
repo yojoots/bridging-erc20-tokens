@@ -1,0 +1,22 @@
+{
+  "name": "bridging-erc20-tokens",
+  "version": "1.0.0",
+  "description": "ERC20 token bridging scripts for Ethereum Sepolia to Base Sepolia",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "deposit": "node deposit.js",
+    "faucet": "node faucet.js",
+    "balance": "node check-balance.js",
+    "withdraw": "node withdraw.js"
+  },
+  "keywords": ["bridging", "ethereum", "base", "erc20"],
+  "author": "Justin Hanneman",
+  "license": "ISC",
+  "packageManager": "pnpm@10.16.1",
+  "dependencies": {
+    "@eth-optimism/viem": "^0.4.13",
+    "dotenv": "^17.2.2",
+    "viem": "^2.37.6"
+  }
+}
