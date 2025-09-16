@@ -1,6 +1,6 @@
-# ERC20 Token Bridging
+# ERC20 Token Bridging to Base/Optimism
 
-Scripts for bridging ERC20 tokens between Ethereum Sepolia and Base Sepolia networks. Based off the [Bridging ERC-20 tokens with viem](https://docs.optimism.io/app-developers/tutorials/bridging/cross-dom-bridge-erc20) tutorial.
+Scripts for bridging ERC20 tokens between Ethereum and Base (mainnet or Sepolia testnet) networks. Based off the [Bridging ERC-20 tokens with viem](https://docs.optimism.io/app-developers/tutorials/bridging/cross-dom-bridge-erc20) tutorial.
 
 ## Features
 
@@ -13,7 +13,7 @@ Scripts for bridging ERC20 tokens between Ethereum Sepolia and Base Sepolia netw
 - Node.js (v16 or higher)
 - pnpm package manager
 - Ethereum wallet with private key
-- Access to Ethereum Sepolia and Base Sepolia testnets
+- Access to the Ethereum and Base network(s) (via working RPC URLs)
 
 ## Setup
 
