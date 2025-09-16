@@ -43,7 +43,7 @@ There is a full [Bridging Your Standard ERC-20 Token Using the Standard Bridge](
 
 3. **Deploy L2 Token:**
 
-    Set up env vars for the address you're deploying with (it must have funds on the L1 network you're interested in; the example below is targeting Base Sepolia and using [the DSTRX token at `0x7fE840B30f32BC0DC977960637Aa9Be8a74660F3` on Sepolia](https://sepolia.etherscan.io/address/0x7fE840B30f32BC0DC977960637Aa9Be8a74660F3) as the L1 token address):
+    Deploy the Base ERC20 contract with `cast`:
 
     ```bash
     cast send 0x4200000000000000000000000000000000000012 "createOptimismMintableERC20(address,string,string)" $DEPLOYER_L1_ERC20_ADDRESS "Districts Token" "DSTRX" --private-key $DEPLOYER_PRIVATE_KEY --rpc-url $DEPLOYER_RPC_URL --json | jq -r '.logs[0].topics[2]' | cast parse-bytes32-address
